@@ -863,7 +863,7 @@ P {
 .subscribe { 
 	background: #333;
 	text-align:center;
-	background: url(../images/mid-banner.jpg)no-repeat center bottom fixed;
+	background: url(../images/back_1.jpg)no-repeat center bottom fixed;
 	background-size:cover;
 	padding: 5em 0;
 }

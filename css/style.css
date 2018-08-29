@@ -905,7 +905,15 @@ P {
 .subscribe form input[type="submit"]:hover {
 	background: transparent;
     border: 1px solid #fff;
-} 
+}
+.subscribe .certificate {
+    padding-top: 20px;
+}
+.subscribe .certificate img {
+    width: 250px;
+    border: 6px solid #FF5722;
+}
+
 /*-- //subscribe --*/ 
 /*-- footer --*/
 .agileits-w3layouts-footer{

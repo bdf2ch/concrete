@@ -20,7 +20,7 @@ body{
 }
 /*-- banner --*/
 .w3-banner{
-	background: url(../images/banner.jpg) no-repeat 0px 0px;
+	background: url(../images/main_1.jpg) no-repeat 0px 0px;
     background-size: cover;
 }
 .w3-banner-1{
@@ -576,6 +576,7 @@ h3.agileits-title, h2.agileits-title {
 	text-align:center;
 }
 .w3l-services-text {
+    height: 295px;
     padding: 2em;
     border: 1px solid #ddd;
 	position: relative;
@@ -848,7 +849,12 @@ P {
 	-o-transition:.5s all;
 	-ms-transition:.5s all;
 	transition:.5s all;
-} 
+}
+.agileits-welcome-info li {
+    text-align: left;
+    font-size: 14px;
+    color: #777;
+    line-height: 28px;}
 .w3l-welcome-grid:hover {
     border-color: #ccc;
 }

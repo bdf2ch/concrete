@@ -913,11 +913,16 @@ P {
     border: 1px solid #fff;
 }
 .subscribe .certificate {
-    padding-top: 20px;
+    //float: left;
+    //width: 250px;
+    //margin-right: 20px;
+    //padding-top: 20px;
+    //border: 6px solid #FF5722;
+    box-sizing: border-box;
 }
-.subscribe .certificate img {
-    width: 250px;
-    border: 6px solid #FF5722;
+.subscribe img {
+    //width: 100%;
+    //border: 6px solid #FF5722;
 }
 
 /*-- //subscribe --*/ 

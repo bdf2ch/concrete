@@ -24,8 +24,8 @@
             $sectionTemplate = $_SERVER["DOCUMENT_ROOT"].$DS."php".$DS."templates".$DS."start.html";
     }
 
-    $template = new XTemplate($_SERVER["DOCUMENT_ROOT"].DIRECTORY_SEPARATOR."php".DIRECTORY_SEPARATOR."templates".DIRECTORY_SEPARATOR."main.html");
-    $template -> assign_file('CONTENT', $sectionTemplate);
+    $template = new XTemplate($sectionTemplate);
+    // $template -> assign_file('CONTENT', $sectionTemplate);
     $template -> parse("main");
     $template -> out("main");
 ?>

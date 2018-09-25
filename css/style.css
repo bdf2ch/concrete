@@ -24,7 +24,7 @@ body{
     background-size: cover;
 }
 .w3-banner-1{
-	background: url(../images/banner.jpg) no-repeat 0px 0px;
+	background: url(../images/bg.jpg) no-repeat 0px 0px;
     background-size: cover;
 	min-height:300px;
 }
@@ -200,6 +200,11 @@ ul.nav.navbar-nav li.active a {
     color: #FFFFFF;
     background: none;
     border: solid 2px #FFFFFF;
+}
+ul.nav.navbar-nav li.na a {
+    color: #FFFFFF;
+    background: none;
+    border: solid 2px transparent;
 }
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
     color: #fff;

@@ -3,6 +3,7 @@
 <html lang="en">
 <head>
     <title>ООО «Управляющая компания «Мурманское дорожное управление»</title>
+    <base href="/">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
     <meta name="keywords" content="Stock Industry Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
@@ -25,6 +26,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <!-- //font -->
     <script src="js/jquery-2.2.3.min.js"></script>
     <script src="js/bootstrap.js"></script>
+    <script src="js/mail.js"></script>
 </head>
 <body>
 <!-- w3-banner -->
@@ -38,14 +40,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 </div>
                 <div class="w3-header-top-right">
                     <div class="agileinfo-social-grids">
-                        <!--
-                        <ul>
-                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fa fa-rss"></i></a></li>
-                            <li><a href="#"><i class="fa fa-vk"></i></a></li>
-                        </ul>
-                        -->
                         <a href="mailto:ukmdu@mail.ru" style="color: white;">Напишите нам письмо</a>
                     </div>
                     <div class="clearfix"></div>
@@ -61,7 +55,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
                             data-target="#bs-example-navbar-collapse-1">
-                        <span class="sr-only">Toggle navigation</span>
+                        <span class="sr-only">Меню</span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
@@ -76,21 +70,18 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav link-effect-4">
-                        <li class="active first-list"><a href="/">Главная</a></li>
+                        <li><a href="/">Главная</a></li>
                         <li><a href="/about">О нас</a></li>
-                        <li><a href="/services">Наши услуги</a></li>
-                        <li><a href="/gallery">Галерея</a></li>
-                        <!--
                         <li><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
                                aria-haspopup="true" aria-expanded="false"><span
-                                data-letters="Pages">Галерея</span><span class="caret"></span></a>
+                                data-letters="Pages">Наши услуги</span><span class="caret"></span></a>
                             <ul class="dropdown-menu">
-                                <li><a href="icons.html">Web Icons</a></li>
-                                <li><a href="codes.html">Short Codes</a></li>
+                                <li><a href="/services/products">Продукция</a></li>
+                                <li><a href="/services/roads">Строительство и содержание дорог</a></li>
+                                <li><a href="/services/labs">Лабороторные испытания</a></li>
                             </ul>
                         </li>
-                        -->
-                        <li><a href="/contacts">Контакты</a></li>
+                        <li class="active first-list"><a href="/contacts">Контакты</a></li>
                     </ul>
                 </div><!-- /.navbar-collapse -->
             </div>
@@ -106,10 +97,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         <h2 class="agileits-title">Свяжитесь с нами</h2>
         <div class="contact-agileinfo">
             <div class="col-md-7 contact-form wthree">
-                <form action="#" method="post">
-                    <input type="text" name="Name" placeholder="Ваше имя" required="">
-                    <input class="email" type="email" name="Email" placeholder="Email" required="">
-                    <textarea placeholder="Ваше сообщение" name="Message" required=""></textarea>
+                <form action="javascript: feedback()" method="post">
+                    <input type="text" id="name" name="name" placeholder="Ваше имя" required>
+                    <input class="email" id="email" type="email" name="email" placeholder="Email" required>
+                    <textarea id="message" placeholder="Ваше сообщение" name="message" required></textarea>
                     <input type="submit" value="ОТПРАВИТЬ">
                 </form>
             </div>
@@ -129,8 +120,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- //contact -->
 <!-- map -->
 <div class="map w3layouts">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1433.1765406256654!2d33.05248791631378!3d68.94840648598603!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x44340fc7c6b0fb57%3A0x1bf6f29a2b653f0d!2z0YPQuy4g0JfQsNGA0LXRh9C90LDRjywgMiwg0JzRg9GA0LzQsNC90YHQuiwg0JzRg9GA0LzQsNC90YHQutCw0Y8g0L7QsdC7LiwgMTgzMDEw!5e0!3m2!1sru!2sru!4v1535975359346" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></div>
-<!-- //map -->
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2880.163215035563!2d33.100821106484624!3d68.84211675429545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4434068796d5fb77%3A0x1a63c1acb0ab28fa!2z0JfQstC10YDQvtGB0L7QstGF0L7Qtywg0JzRg9GA0LzQsNC90YHQutCw0Y8g0L7QsdC7LiwgMTg0MzY2!5e0!3m2!1sru!2sru!4v1537454235034" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    <!-- //map -->
 
 <!-- footer -->
 <div class="agileits-w3layouts-footer">

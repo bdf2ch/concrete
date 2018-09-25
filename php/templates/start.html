@@ -3,6 +3,7 @@
 <html lang="ru">
 <head>
     <title>ООО «Управляющая компания «Мурманское дорожное управление»</title>
+    <base href="/">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
     <meta name="keywords" content="Stock Industry Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
@@ -23,8 +24,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <!-- gallery -->
     <link rel="stylesheet" href="css/lightbox.css">
     <!-- //gallery -->
-    <script src="js/jquery-2.2.3.min.js"></script>
-    <script src="js/bootstrap.js"></script>
+    <script src="/js/jquery-2.2.3.min.js"></script>
+    <script src="/js/bootstrap.js"></script>
 
 
 </head>
@@ -40,14 +41,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     </div>
                     <div class="w3-header-top-right">
                         <div class="agileinfo-social-grids">
-                            <!--
-                            <ul>
-                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa fa-rss"></i></a></li>
-                                <li><a href="#"><i class="fa fa-vk"></i></a></li>
-                            </ul>
-                            -->
                             <a href="mailto:ukmdu@mail.ru" style="color: white;">Напишите нам письмо</a>
                         </div>
                         <div class="clearfix"></div>
@@ -63,7 +56,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     <div class="navbar-header">
                         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
                                 data-target="#bs-example-navbar-collapse-1">
-                            <span class="sr-only">Toggle navigation</span>
+                            <span class="sr-only">Меню</span>
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
@@ -80,18 +73,17 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                         <ul class="nav navbar-nav link-effect-4">
                             <li class="active first-list"><a href="/">Главная</a></li>
                             <li><a href="/about">О нас</a></li>
-                            <li><a href="/services">Наши услуги</a></li>
-                            <li><a href="/gallery">Галерея</a></li>
-                            <!--
+
                             <li><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
                                    aria-haspopup="true" aria-expanded="false"><span
-                                    data-letters="Pages">Галерея</span><span class="caret"></span></a>
+                                    data-letters="Pages">Наши услуги</span><span class="caret"></span></a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="icons.html">Web Icons</a></li>
-                                    <li><a href="codes.html">Short Codes</a></li>
+                                    <li><a href="/services/products">Продукция</a></li>
+                                    <li><a href="/services/roads">Строительство и содержание дорог</a></li>
+                                    <li><a href="/services/labs">Лабороторные испытания</a></li>
                                 </ul>
                             </li>
-                            -->
+
                             <li><a href="/contacts">Контакты</a></li>
                         </ul>
                     </div><!-- /.navbar-collapse -->
@@ -128,27 +120,33 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                 <div class="slider-info">
                                     <h3>Гарантия качества</h3>
                                     <p>Наши клиенты всегда могут быть уверены в высочайшем качестве наших услуг и работ</p>
+                                    <!--
                                     <div class="more-button">
                                         <a href="#" data-toggle="modal" data-target="#quality-modal">Подробнее</a>
                                     </div>
+                                    -->
                                 </div>
                             </li>
                             <li>
                                 <div class="slider-info">
                                     <h3>Профессионализм</h3>
                                     <p>Наши сотрудники - профессионалы высокой квалификации, способные реализовывать проекты любой сложности</p>
+                                    <!--
                                     <div class="more-button">
                                         <a href="#" data-toggle="modal" data-target="#prof-modal">Подробнее</a>
                                     </div>
+                                    -->
                                 </div>
                             </li>
                             <li>
                                 <div class="slider-info">
                                     <h3>Технологичность</h3>
                                     <p>Современное оборудование и технологии - неотъемлимая часть нашей работы, нацеленной на Ваш результат</p>
+                                    <!--
                                     <div class="more-button">
                                         <a href="#" data-toggle="modal" data-target="#technology-modal">Подробнее</a>
                                     </div>
+                                    -->
                                 </div>
                             </li>
                         </ul>
@@ -293,8 +291,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     <i class="fa fa-truck" aria-hidden="true"></i>
                 </div>
                 <h6>Единиц техники</h6>
-                <div class='numscroller numscroller-big-bottom' data-slno='1' data-min='0' data-max='80'
-                     data-delay='4' data-increment="1">&gt;80
+                <div class="row">
+                    <div class="col-12" style="text-align: center;">
+                        <div style="float: left;">&gt;</div>
+                        <div class='numscroller numscroller-big-bottom' data-slno='1' data-min='0' data-max='80' style="float: left;"
+                             data-delay='4' data-increment="1">80
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="col-sm-3 col-xs-6 stats-grid">
@@ -321,7 +324,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         <h2 class="agileits-title">Наши услуги</h2>
         <div class="w3-services-grids">
             <div class="col-md-4 col-xs-6 w3l-services-grid">
-                <div class="w3l-services-text">
+                <div class="w3l-services-text" style="margin-bottom: 20px;">
                     <div class="w3ls-services-img">
                         <i class="fa fa-truck" aria-hidden="true"></i>
                     </div>
@@ -332,7 +335,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 </div>
             </div>
             <div class="col-md-4 col-xs-6 w3l-services-grid">
-                <div class="w3l-services-text">
+                <div class="w3l-services-text" style="margin-bottom: 20px;">
                     <div class="w3ls-services-img">
                         <i class="fa fa-shopping-bag" aria-hidden="true"></i>
                     </div>
@@ -343,7 +346,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 </div>
             </div>
             <div class="col-md-4 col-xs-6 w3l-services-grid">
-                <div class="w3l-services-text">
+                <div class="w3l-services-text" style="margin-bottom: 20px;">
                     <div class="w3ls-services-img">
                         <i class="fa fa-road" aria-hidden="true"></i>
                     </div>
@@ -354,7 +357,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 </div>
             </div>
             <div class="col-md-4 col-xs-6 w3l-services-grid">
-                <div class="w3l-services-text">
+                <div class="w3l-services-text" style="margin-bottom: 20px;">
                     <div class="w3ls-services-img">
                         <i class="fa fa-wrench" aria-hidden="true"></i>
                     </div>
@@ -365,7 +368,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 </div>
             </div>
             <div class="col-md-4 col-xs-6 w3l-services-grid">
-                <div class="w3l-services-text">
+                <div class="w3l-services-text" style="margin-bottom: 20px;">
                     <div class="w3ls-services-img">
                         <i class="fa fa-flask" aria-hidden="true"></i>
                     </div>
@@ -375,18 +378,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     </div>
                 </div>
             </div>
-            <!--
-            <div class="col-md-3 col-xs-6 w3l-services-grid">
-                <div class="w3l-services-text">
-                    <div class="w3ls-services-img">
-                        <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
-                    </div>
-                    <div class="agileits-services-info">
-                        <h4>Pra tempor</h4>
-                        <p>Arcu vel dui sagittis donecnon finibus. Duis suscipit rhoncus</p>
-                    </div>
-                </div>
-            </div-->
             <div class="clearfix"></div>
         </div>
     </div>
@@ -401,16 +392,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <h3 class="agileits-title sub">Лицензии и сертификаты</h3>
             <br>
         </div>
-
-        <!--
-        <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
-            dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor
-            sit amet, consectetur adipisci velit sed quia non numquam eius.</p>
-        <form action="#" method="post">
-            <input type="email" name="email" placeholder="Email Address" class="user" required="">
-            <input type="submit" value="Subscribe">
-        </form>
-        -->
         <div class="row">
             <img src="images/cert_1.jpg" class="col-md-2 col-xs-6 w3l-services-grid" alt="">
             <img src="images/cert_2.jpg" class="col-md-2 col-xs-6 w3l-services-grid" alt="">

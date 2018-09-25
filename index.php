@@ -12,10 +12,21 @@
             $sectionTemplate = $_SERVER["DOCUMENT_ROOT"].$DS."php".$DS."templates".$DS."about.html";
             break;
         case 'services':
-            $sectionTemplate = $_SERVER["DOCUMENT_ROOT"].$DS."php".$DS."templates".$DS."services.html";
-            break;
-        case 'gallery':
-            $sectionTemplate = $_SERVER["DOCUMENT_ROOT"].$DS."php".$DS."templates".$DS."gallery.html";
+            $subSection = $url[2];
+            switch ($subSection) {
+                case 'products':
+                    $sectionTemplate = $_SERVER["DOCUMENT_ROOT"].$DS."php".$DS."templates".$DS."products.html";
+                    break;
+                case 'roads':
+                    $sectionTemplate = $_SERVER["DOCUMENT_ROOT"].$DS."php".$DS."templates".$DS."roads.html";
+                    break;
+                case 'labs':
+                    $sectionTemplate = $_SERVER["DOCUMENT_ROOT"].$DS."php".$DS."templates".$DS."labs.html";
+                    break;
+                default:
+                    $sectionTemplate = $_SERVER["DOCUMENT_ROOT"].$DS."php".$DS."templates".$DS."start.html";
+                    break;
+            }
             break;
         case 'contacts':
             $sectionTemplate = $_SERVER["DOCUMENT_ROOT"].$DS."php".$DS."templates".$DS."contacts.html";

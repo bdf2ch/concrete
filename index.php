@@ -1,4 +1,5 @@
 <?php
+    error_reporting(E_ERROR);
     $DS = DIRECTORY_SEPARATOR;
     require_once $_SERVER["DOCUMENT_ROOT"].$DS."php".$DS."libs".$DS."xtemplate".$DS."xtemplate.class.php";
     $path = $_SERVER['REQUEST_URI'];

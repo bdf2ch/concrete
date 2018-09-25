@@ -28,6 +28,11 @@ body{
     background-size: cover;
 	min-height:300px;
 }
+.w3-banner-2{
+    background: url(../images/004.jpg) no-repeat 0px 0px;
+    background-size: cover;
+    min-height:300px;
+}
 .wthree-different-dot {
     background: url(../images/dott.png)repeat 0px 0px;
     background-size: 2px;
@@ -53,7 +58,7 @@ body{
 }
 .w3-header-top-left p,.w3-header-top-right-text p{
 	color:#FFFFFF;
-	font-size:.9em;
+	font-size: 1.3em;
 	margin:0;
 }
 .w3-header-top-right{

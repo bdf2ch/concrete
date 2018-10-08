@@ -15,6 +15,9 @@
         case 'services':
             $subSection = $url[2];
             switch ($subSection) {
+                case 'technics':
+                    $sectionTemplate = $_SERVER["DOCUMENT_ROOT"].$DS."php".$DS."templates".$DS."technics.html";
+                    break;
                 case 'products':
                     $sectionTemplate = $_SERVER["DOCUMENT_ROOT"].$DS."php".$DS."templates".$DS."products.html";
                     break;

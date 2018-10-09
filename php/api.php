@@ -5,6 +5,7 @@
     header('Access-Control-Allow-Headers: Access-Control-Allow-Headers, Origin,Accept, X-Requested-With, Content-Type, Access-Control-Request-Method, Access-Control-Request-Headers');
     $DS = DIRECTORY_SEPARATOR;
     require_once $_SERVER["DOCUMENT_ROOT"].$DS."php".$DS."authentication.php";
+    require_once $_SERVER["DOCUMENT_ROOT"].$DS."php".$DS."feedback.php";
 
     if (isset($_GET['action'])) {
         switch($_GET['action']) {
@@ -13,6 +14,12 @@
                 break;
             case 'signOut':
                 signOut();
+                break;
+            case 'getFeedbackMessages':
+                getFeedbackMessages();
+                break;
+            case 'addFeedbackMessage':
+                addFeedbackMessage();
                 break;
         }
     }

@@ -1,7 +1,7 @@
 <?php
 
     function getFeedbackMessages() {
-        $conn = new mysqli('localhost', 'root', 'l1mpb1zk1t');
+        $conn = new mysqli('localhost', 'root', 'l1mpb1zk1t', 'c2680_ukmdu');
         if ($conn -> connect_error) {
             die("Connection failed: " . $conn->connect_error);
         }
@@ -24,7 +24,7 @@
             $email = $_GET['email'];
             $message = $_GET['message'];
 
-            $conn = new mysqli('localhost', 'root', 'l1mpb1zk1t');
+            $conn = new mysqli('localhost', 'root', 'l1mpb1zk1t', 'c2680_ukmdu');
             if ($conn -> connect_error) {
                 die("Connection failed: " . $conn->connect_error);
             }

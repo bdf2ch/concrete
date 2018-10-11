@@ -16,7 +16,7 @@
                 $row = $result -> fetch_assoc();
                 echo(json_encode($row));
             } else {
-                echo('null');
+                echo (json_encode('null'));
             }
             $conn -> close();
         }

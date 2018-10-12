@@ -29,7 +29,7 @@
                 die("Connection failed: " . $conn->connect_error);
             }
 
-            $sql = "INSERT INTO feedback (name, email, message) VALUES ('".$name."', '".$email."', '".$message."')";
+            $sql = "INSERT INTO feedback (name, email, message, date_created) VALUES ('".$name."', '".$email."', '".$message."', ".time().")";
             $result = $conn -> query($sql);
             $id = $conn -> insert_id;
 

@@ -5,6 +5,7 @@
     header('Access-Control-Allow-Headers: Access-Control-Allow-Headers, Origin,Accept, X-Requested-With, Content-Type, Access-Control-Request-Method, Access-Control-Request-Headers');
     $DS = DIRECTORY_SEPARATOR;
     require_once $_SERVER["DOCUMENT_ROOT"].$DS."php".$DS."authentication.php";
+    require_once $_SERVER["DOCUMENT_ROOT"].$DS."php".$DS."machines.php";
     require_once $_SERVER["DOCUMENT_ROOT"].$DS."php".$DS."feedback.php";
 
     if (isset($_GET['action'])) {
@@ -20,6 +21,18 @@
                 break;
             case 'addFeedbackMessage':
                 addFeedbackMessage();
+                break;
+            case 'getMachinesList':
+                getMachinesList();
+                break;
+            case 'addMachine':
+                addMachine();
+                break;
+            case 'editMachine':
+                editMachine();
+                break;
+            case 'deleteMachine':
+                deleteMachine();
                 break;
         }
     }

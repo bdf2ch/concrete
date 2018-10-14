@@ -1,14 +1,13 @@
 function feedback() {
     var params = {
+        action: 'addFeedbackMessage',
         name: jQuery('#name').val(),
         email: jQuery('#email').val(),
         message: jQuery('#message').val()
     };
-    jQuery.post('/php/mail.php', params, function () {
-        console.log('mail.php called', params);
+    jQuery.get('/php/api.php', params, function () {
         jQuery('#name').val('');
         jQuery('#email').val('');
         jQuery('#message').val('');
-
     });
 }

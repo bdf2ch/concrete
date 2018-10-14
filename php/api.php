@@ -22,17 +22,29 @@
             case 'addFeedbackMessage':
                 addFeedbackMessage();
                 break;
+            case 'deleteMessage':
+                deleteMessage();
+                break;
             case 'getMachinesList':
                 getMachinesList();
-                break;
-            case 'addMachine':
-                addMachine();
                 break;
             case 'editMachine':
                 editMachine();
                 break;
             case 'deleteMachine':
                 deleteMachine();
+                break;
+        }
+    }
+
+
+    if (isset($_POST['action'])) {
+        switch($_POST['action']) {
+            case 'addMachine':
+                addMachine();
+                break;
+            case 'uploadMachinePhoto':
+                uploadPhoto();
                 break;
         }
     }

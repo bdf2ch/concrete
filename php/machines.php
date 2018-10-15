@@ -35,9 +35,9 @@
             $rent = $_POST['rent'];
             $DS = DIRECTORY_SEPARATOR;
 
-            $uploaddir = $_SERVER["DOCUMENT_ROOT"].$DS."images".$DS."machines".$DS;
+            $uploaddir = $_SERVER["DOCUMENT_ROOT"].$DS."images".$DS."technics".$DS;
             $uploadfile = $uploaddir .$DS. basename($_FILES['photo']['name']);
-            $url = 'images/techincs/'.basename($_FILES['photo']['name']);
+            $url = 'images/technics/'.basename($_FILES['photo']['name']);
 
             if (move_uploaded_file($_FILES['photo']['tmp_name'], $uploadfile)) {} else {
                 echo "Возможная атака с помощью файловой загрузки!\n";
@@ -101,9 +101,9 @@
             global $db_name;
             $id = $_POST['id'];
             $DS = DIRECTORY_SEPARATOR;
-            $uploaddir = $_SERVER["DOCUMENT_ROOT"].$DS."images".$DS."machines".$DS;
+            $uploaddir = $_SERVER["DOCUMENT_ROOT"].$DS."images".$DS."technics".$DS;
             $uploadfile = $uploaddir .$DS. basename($_FILES['photo']['name']);
-            $url = 'images/techincs/'.basename($_FILES['photo']['name']);
+            $url = '/images/technics/'.basename($_FILES['photo']['name']);
 
             if (move_uploaded_file($_FILES['photo']['tmp_name'], $uploadfile)) {} else {
                 echo "Возможная атака с помощью файловой загрузки!\n";

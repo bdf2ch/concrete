@@ -35,7 +35,9 @@
                         while($row = $result -> fetch_assoc()) {
                             $template -> parse('main.machine');
                             $template -> assign("TITLE", $row['title']);
-
+                            $template -> assign("DESCRIPTION", $row['description']);
+                            $template -> assign("COST", $row['cost']);
+                            $template -> assign("RENT", $row['rent']);
                         }
                     }
                     break;
